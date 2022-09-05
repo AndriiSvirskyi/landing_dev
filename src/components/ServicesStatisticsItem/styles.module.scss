@@ -13,6 +13,9 @@
     display: flex;
     margin: 0 144px 0 0;
     .number {
+      position: relative;
+      counter-reset: num var(--num);
+      animation: counterLight 3s cubic-bezier(0.24, 0.9, 0.61, 0.54) 1 forwards;
       font-size: 48px;
       line-height: 110%;
       display: flex;
@@ -22,6 +25,40 @@
         height: 63px;
         display: flex;
       }
+      &::before {
+        content: counter(num);
+        margin: 0 4px 0 0;
+      }
     }
+    .plus {
+      position: absolute;
+      left: var(--left);
+    }
+  }
+}
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@property --visibility {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: false;
+}
+
+@keyframes counterLight {
+  from {
+    --num: 0;
+    opacity: 0;
+    color: white;
+  }
+
+  to {
+    --num: var(--text);
+    opacity: 1;
+    color: var(--color);
   }
 }

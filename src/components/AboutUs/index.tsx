@@ -62,6 +62,7 @@ export const AboutUs = () => {
             {items.map(({ title, data, color, isOpen, setIsOpen }, index) => {
               return (
                 <AboutUsItem
+                  key={title + index}
                   isMainToggle={false}
                   setIsOpen={setIsOpen}
                   isOpen={isOpen}

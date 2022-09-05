@@ -4,9 +4,14 @@
   font-family: "ABC Favorit Mono";
   font-weight: 350;
   & .title {
+    display: inline-block;
     font-size: 22px;
     line-height: 110%;
     margin: 0 0 12px 0;
+    overflow: hidden;
+    border-right: 2px solid transparent;
+    animation: typing 2.5s steps(70, end), blink-caret 0.5s step-end 6;
+    white-space: nowrap;
   }
   & .paragraph {
     width: calc(100% - 252px);
@@ -23,5 +28,24 @@
     background: none;
     border-style: none;
     margin: 0 0 0 5px;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--width);
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(189, 189, 189);
   }
 }

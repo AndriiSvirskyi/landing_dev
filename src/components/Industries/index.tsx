@@ -90,16 +90,19 @@ export const Industries = () => {
       <div className={styles.industries}>
         <Line />
         <div>
-          {industries.map(({ title, text, icon, color }: IndustriesProps) => {
-            return (
-              <IndustryItem
-                icon={icon}
-                title={title}
-                text={text}
-                color={color}
-              />
-            );
-          })}
+          {industries.map(
+            ({ title, text, icon, color }: IndustriesProps, index) => {
+              return (
+                <IndustryItem
+                  key={title + index}
+                  icon={icon}
+                  title={title}
+                  text={text}
+                  color={color}
+                />
+              );
+            }
+          )}
         </div>
       </div>
       <span className={styles.brackets}>]</span>
