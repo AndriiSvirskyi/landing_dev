@@ -1,0 +1,14 @@
+.container {
+  height: calc(100vh - 46px);
+  display: flex;
+  align-items: center;
+  & .paragraph {
+    max-width: 462px;
+    margin: 0 0 0 158px;
+    color: #ffffff;
+    font-family: "ABC Favorit Mono";
+    font-weight: 350;
+    font-size: 24px;
+    line-height: 110%;
+  }
+}

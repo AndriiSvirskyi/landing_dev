@@ -1,0 +1,10 @@
+.lines {
+  display: flex;
+  .line {
+    width: 0.5px;
+    height: 100%;
+    opacity: 0.15;
+    background: #d5d4d5;
+    margin: 0 20px 0 0;
+  }
+}

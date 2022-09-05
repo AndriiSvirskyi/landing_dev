@@ -1,0 +1,39 @@
+.container {
+  margin: 100px 0 0 0;
+  & .title {
+    font-family: "ABC Favorit Mono";
+    font-weight: 350;
+    font-size: 24px;
+    line-height: 110%;
+    color: #d5d4d5;
+    margin: 0 0 28px 157px;
+    padding: 0;
+  }
+  & .brackets {
+    display: block;
+    font-family: "ABC Favorit Mono";
+    font-weight: 350;
+    font-size: 24px;
+    line-height: 110%;
+    color: #d5d4d5;
+    margin: 25px 0 102px 157px;
+  }
+  & .industries {
+    display: flex;
+    margin: 0 0 0 158px;
+  }
+  & .iconContainer {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    & svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      &.icon {
+        top: 46%;
+      }
+    }
+  }
+}

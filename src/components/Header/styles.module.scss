@@ -1,0 +1,75 @@
+.header {
+  width: calc(100% - 35px);
+  height: 46px;
+  padding: 0 35px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #252525;
+  .container {
+    height: 100%;
+    display: flex;
+    & .logo {
+      width: 204px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #2f323c;
+      font-family: "ABC Favorit Mono";
+      font-style: normal;
+      font-weight: 350;
+      font-size: 18px;
+      line-height: 110%;
+
+      color: #ffffff;
+    }
+    & .menu {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-family: "ABC Favorit Mono";
+      font-style: normal;
+      font-weight: 350;
+      font-size: 16px;
+      line-height: 110%;
+      color: #858383;
+      height: 100%;
+
+      & li {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 0 26px 0 14px;
+        &.active {
+          background-color: #1e1e1e;
+        }
+        & svg {
+          margin: 0 10px 0 0;
+        }
+        & .dot {
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          top: calc(50% - 3px);
+          right: 10px;
+          background: #ffffff;
+        }
+        & .stick {
+          position: absolute;
+          width: 2px;
+          height: 14px;
+          top: calc(50% - 7px);
+          right: -1px;
+          background: #1e1e1e;
+        }
+      }
+    }
+  }
+  & .dots {
+    cursor: pointer;
+  }
+}

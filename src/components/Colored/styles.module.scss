@@ -1,3 +1,26 @@
-.color {
-  color: red;
+.text {
+  display: inline;
+  &.pink {
+    color: #eb539f;
+  }
+
+  &.yellow {
+    color: #ffd600;
+  }
+
+  &.blue {
+    color: #5e9ff1;
+  }
+
+  &.aquamarine {
+    color: #98faea;
+  }
+
+  &.orange {
+    color: #e2792e;
+  }
+
+  &.green {
+    color: #81d653;
+  }
 }

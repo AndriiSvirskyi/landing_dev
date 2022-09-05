@@ -1,5 +1,10 @@
-import styles from './styles.module.scss';
+import styles from "./styles.module.scss";
 
-export const ColoredText = () => {
-  return <div className={styles.color}>gfdg</div>;
+type ColoredTextProps = {
+  color: string;
+  text: string;
+};
+
+export const ColoredText = ({ color, text }: ColoredTextProps) => {
+  return <div className={`${styles[color]} ${styles.text}`}>{text}</div>;
 };

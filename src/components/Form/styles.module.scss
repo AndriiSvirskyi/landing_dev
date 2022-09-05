@@ -1,0 +1,56 @@
+.form {
+  & .title {
+    margin: 0 0 22px 0;
+    font-family: "ABC Favorit Mono";
+    font-weight: 350;
+    font-size: 24px;
+    line-height: 110%;
+    color: #ffffff;
+  }
+  & .formContainer {
+    display: flex;
+    height: 146px;
+    & .inputs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 170px;
+      position: relative;
+      top: -18px;
+      & .input {
+        font-family: "ABC Favorit Mono";
+        font-weight: 350;
+        font-size: 16px;
+        line-height: 130%;
+        width: 200px;
+        color: #d5d4d5;
+        height: 50px;
+        background: none;
+        border-style: none;
+        outline: none;
+        padding: 0 10px;
+        &::placeholder {
+          color: #d5d4d5;
+        }
+      }
+      textarea {
+        resize: none;
+        margin: 8px 0 0 0;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+      & .button {
+        cursor: pointer;
+        font-family: "ABC Favorit Mono";
+        font-weight: 350;
+        font-size: 16px;
+        line-height: 130%;
+        width: 45px;
+        background: none;
+        border-style: none;
+        padding: 0 10px;
+      }
+    }
+  }
+}
